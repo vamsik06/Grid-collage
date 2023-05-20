@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Collage</title>
+    <style>
+        .grid{
+            background-image:url(bg.jpg);
+           padding-left: 300px; 
+            display: grid;
+            grid-template-columns: auto auto auto;          
+        }
+        .grid-item1,.grid-item2,.grid-item3,.grid-item4,.grid-item5,.grid-item6,.grid-item7{
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            column-gap: 10px;
+            display: flex;
+            justify-content: center;
+            border-color: aliceblue;
+            color: white;
+            box-shadow: 0 0 20px white;
+        }
+        .grid-item1{
+            grid-column-start:1;
+            grid-row-start: 2;
+            margin-top: 150px;
+        }
+        .grid-item1:hover{
+            color: white;
+            
+        }
+        .grid-item2{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            margin-top: 100px;
+        }
+        .grid-item3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3; 
+        }
+        .grid-item6{
+            grid-column-start:2;
+            grid-row-start: 2;
+        }
+        .grid-item7{
+            grid-column-start: 2;
+            grid-row-start: 3;
+            grid-column-end: 2;
+            margin-top: -130px
+        }
+        .grid-item4{
+            grid-column-start: ;
+            grid-row-start: 2;
+            margin-top: -150px;
+            margin-right: 500px;
+        }
+        .grid-item5{
+            grid-row-start: 3;
+            margin-top: -290px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-item1">
+            <img src="sp1.jpg" width="300px" height="300px">
+        </div>
+        <div class="grid-item2">
+            <img src="sp2.jpg" width="300px" height="300px">
+        </div>
+        <div class="grid-item3" >
+            <img src="sp3.jpeg" width="300px" height="300px">
+        </div>
+        <div class="grid-item4">
+            <img src="sp4.webp" width="300px" height="300px">
+        </div>
+        <div class="grid-item5">
+            <img src="sp5.jpg" width="300px" height="300px">
+        </div>
+        <div class="grid-item6">
+            <img src="sp6.webp" width="300px" height="300px">
+        </div>
+        <div class="grid-item7">
+            <img src="sp7.jpg" width="300px" height="300px">
+        </div>
+        
+    </div>
+</body>
+</html>
